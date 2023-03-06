@@ -15,16 +15,15 @@ private float[] debits;
 
     private float sumOfCredits(float[] credits) {
         float sum = 0.0f;
-         for (int i = 0; i<credits.length ; i++){
-             sum += credits[i];
-        }
+        for(float credit: credits) {
+            sum += credit;}
         return sum;
     }
 
     private float sumOfDibits(float[] debits) {
         float sum = 0.0f;
-        for (int i = 0; i<debits.length ; i++){
-            sum += debits[i];
+        for(float debit: debits) {
+            sum += debit;
         }
         return sum;
     }

@@ -34,9 +34,10 @@ private float[] debits;
         int remainingDays = totalDaysInMonth - date.getDayOfMonth();
         return remainingDays;
     }
-private float calculate(float[] credits, float[] debits){
-        return sumOfCredits(credits)- sumOfDibits(debits);
-}
+    public float calculate() {
+        return sumOfCredits() - sumOfDibits();
+    }
+
 
 public static void main(String[] args){
     final String[] creditsAsString = args[0].split(",");

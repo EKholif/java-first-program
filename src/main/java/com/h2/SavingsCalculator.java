@@ -55,7 +55,7 @@ public static void main(String[] args){
     }
 
     final SavingsCalculator calculator = new SavingsCalculator(credits, debits);
-    float netSavings = calculator.calculate();
+    float netSavings = calculator.calculate(credits, debits);
     System.out.println("Net Savings = " + netSavings + ", remaining days in month = " + remainingDaysInMonth(LocalDate.now()));
 }
 }

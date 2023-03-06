@@ -20,8 +20,8 @@ private float[] debits;
         return sum;
     }
 
-    private float sumOfDibits(float[] debits) {
-        float sum = 0.0f;
+    private float sumOfDebits(float[] debits) {
+        float sum = 0;
         for(float debit: debits) {
             sum += debit;
         }
@@ -35,7 +35,7 @@ private float[] debits;
         return remainingDays;
     }
     public float calculate(float[] credits, float[] debits) {
-        return sumOfCredits(credits) - sumOfDibits(debits);
+        return sumOfCredits(credits) - sumOfDebits(debits);
     }
 
 

@@ -20,14 +20,13 @@ public class MortgageCalculator {
 private float getMonthlyInterestRate() {
 
     float  interestRate  = (annualRate / 100)/12 ;
+    return interestRate;
 }
 public double calculateMonthlyPayment(){
 
-    double m =loanAmount *
-            (((getMonthlyInterestRate() * Math.pow(1 + getMonthlyInterestRate(),getNumberOfPayments()))) /
+    double m =loanAmount * (((getMonthlyInterestRate() * Math.pow(1 + getMonthlyInterestRate(), getNumberOfPayments()))) /
             ((Math.pow((1 + getMonthlyInterestRate()), getNumberOfPayments())) - 1));
     m = this.monthlyPayment;
-            return toString(m);
-
+    return m;
 }
 }
